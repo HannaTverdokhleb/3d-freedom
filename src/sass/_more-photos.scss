@@ -23,6 +23,11 @@
 /* More photo */
 
 .more-foto_title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.25;
+  color: var(--secondary-text-color);
   margin-bottom: 40px;
 }
 
