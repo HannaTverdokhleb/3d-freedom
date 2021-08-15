@@ -1,1 +1,59 @@
-<h2 class="">header</h2>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html" class="logo-header">
+            <picture>
+                <source media="(min-width: 320px)"
+                    srcset="./src/images/logo/logo.jpg 1x, ./src/images/logo/logo@2x.jpg 2x">
+                <source media="(min-width: 320px)"
+                    srcset="./src/images/logo/logo.webp 1x, ./src/images/logo/logo@2x.webp 2x" type="image/webp">
+                <img src="./src/images/logo/logo.jpg" alt="Логотип">
+            </picture>
+        </a>
+
+        <ul class="list header__menu-list">
+            <li>Головна</li>
+            <li>Послуги</li>
+            <li>Замовити</li>
+            <li>Контакти</li>
+        </ul>
+
+        <button class="header__burger-btn">
+            <!-- <svg class="header__burger-icon" width="32" height="32">
+                <use href="./src/images/icons.svg#icon-burger-menu"></use>
+            </svg> -->
+        </button>
+
+
+
+        <!-- <svg class="header__phone-icon" width="24" height="24">
+            <use href="./src/images/icons.svg#icon-phone"></use>
+        </svg> -->
+
+        <label for="lang" class=""></label>
+        <select id="lang" name="lang" class="header__select">
+            <option value="UA">UA</option>
+            <option value="RU">RU</option>
+            <option value="ENG" selected>ENG</option>
+        </select>
+        <ul class="list header__phones-list">
+            <li class="header__phones-list_item">
+                <!-- <svg class="header__phones-list_icon" width="14" height="14">
+                    <use href="./src/images/icons.svg#icon-phone"></use>
+                </svg> -->
+                <a href="tel:+380936432288" class="header__phones-list_link">
+
+                    +38 (093) 643 22 88
+                </a>
+            </li>
+            <li class="header__phones-list_item">
+                <!-- <svg class="header__phones-list_icon" width="14" height="14">
+                    <use href="./src/images/icons.svg#icon-phone"></use>
+                </svg> -->
+                <a href="tel:+380503454423" class="header__phones-list_link">
+
+                    +38 (050) 345 44 23
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
