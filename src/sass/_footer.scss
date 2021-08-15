@@ -29,12 +29,12 @@
   height: 42px;
   margin: 0 auto;
   margin-bottom: 19px;
-  background-image: url(../images/footerlogo.png);
+  background-image: url('../images/footerlogo.png');
   background-size: cover;
   background-repeat: no-repeat;
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/footerlogo@2x.png);
+    background-image: url('../images/footerlogo@2x.png');
   }
 
   @media screen and (min-width: 1440px) {
