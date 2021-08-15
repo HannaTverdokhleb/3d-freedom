@@ -1,0 +1,243 @@
+.more-photo__container {
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1062px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.more-foto_title {
+  margin-bottom: 40px;
+}
+
+.system-uicons_loader__icon {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+
+  .system-uicons_loader__btn:hover &,
+  .system-uicons_loader__btn:focus & {
+    fill: tomato;
+  }
+}
+
+.system-uicons_loader__more-photo__container {
+  text-align: center;
+  width: 100%;
+}
+
+.system-uicons_loader__btn {
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 76px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-top: 56px;
+    margin-bottom: 100px;
+  }
+}
+
+.more-foto__items {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-top: -32px;
+    margin-left: -32px;
+  }
+}
+
+.more-foto__item:not(:first-child) {
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
+}
+
+.more-foto__item {
+  &:hover,
+  &:focus {
+    outline: 1px solid orange;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+}
+
+.backdrop__more-photo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(43, 43, 43, 0.8);
+  backdrop-filter: blur(4px);
+
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal__more-photo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 236px;
+  height: 157px;
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    width: 554px;
+    height: 369px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    width: 906px;
+    height: 605px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-btn__icon {
+  width: 10px;
+  height: 10px;
+  fill: #ffffff;
+  transition: fill 250ms var(--cubic);
+
+  .close-btn:focus &,
+  .close-btn:hover & {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.previous-btn__icon,
+.next-btn__icon {
+  width: 10px;
+  height: 10px;
+  fill: #ffffff;
+  transition: fill 250ms var(--cubic);
+
+  .previous-btn:focus &,
+  .previous-btn:hover & {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .next-btn:focus &,
+  .next-btn:hover & {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 26px;
+    height: 26px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    width: 42px;
+    height: 42px;
+  }
+}
+.previous-btn {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    left: -46px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    left: -86px;
+  }
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    right: -46px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    right: -86px;
+  }
+}
+
+.open__btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.hide {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
