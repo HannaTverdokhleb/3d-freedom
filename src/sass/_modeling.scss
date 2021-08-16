@@ -63,15 +63,32 @@
   }
 }
 
+.modeling-methods__list {
+  padding-left: 20px;
+}
+
 .modeling-methods__item {
   font-family: var(--secondary-font);
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
   color: var(--main-text-color);
+  position: relative;
+  margin-left: 10px;
 
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: -20px;
+    top: 5px;
+    background-color: #487996;
+    border-radius: 3px 0px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -180,7 +197,6 @@
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
 
-  cursor: pointer;
   margin-top: 52px;
   margin-bottom: 76px;
 
