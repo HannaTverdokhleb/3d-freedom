@@ -65,7 +65,7 @@
 .modeling-methods {
   background-image: url('./images/3d-modeling/mobile/model-mobile.jpg');
 
-   @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('./images/3d-modeling/mobile/model-mobile@2x.jpg');
@@ -73,7 +73,7 @@
 
   @media screen and (min-width: 481px) {
     background-image: url('./images/3d-modeling/tablet/model-tablet.jpg');
-    
+
     @media (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -83,12 +83,11 @@
 
   @media screen and (min-width: 769px) {
     background-image: url('./images/3d-modeling/desktop/model-desktop.jpg');
-    
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('./images/3d-modeling/desktop/model-desktop@2x.jpg');
-    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('./images/3d-modeling/desktop/model-desktop@2x.jpg');
+  }
 }
 
 /*=============3d-modeling-we-create-model=============*/
