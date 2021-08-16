@@ -24,22 +24,12 @@
 }
 
 .footer-logo {
-  display: block;
-  width: 192px;
-  height: 42px;
   margin: 0 auto;
   margin-bottom: 19px;
-  background-image: url('../images/footerlogo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/footerlogo@2x.png');
-  }
 
   @media screen and (min-width: 1440px) {
     margin: 0;
-    margin-right: auto;
+    margin-right: 136px;
   }
 }
 
@@ -51,8 +41,6 @@
 }
 
 .footer-nav__list {
-  // padding: 0;
-  // margin: 0;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -61,7 +49,6 @@
 }
 
 .footer-social__list {
-  // padding: 0;
   margin-top: 24px;
   margin-bottom: 24px;
   text-align: center;
@@ -76,10 +63,7 @@
     margin-right: 145px;
   }
 }
-// .footer-contact__list {
-//   padding: 0;
-//   margin: 0;
-// }
+
 .footer-contact__item,
 .footer-contact__text {
   text-align: center;
