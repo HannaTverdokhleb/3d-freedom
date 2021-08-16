@@ -121,4 +121,26 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .header__menu-dropdown {
+    overflow: hidden;
+  }
+
+  .header__menu_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .header__menu_dropdown-content .menu-dropdown__link {
+    color: inherit;
+    margin-bottom: 6px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .header__menu-dropdown:hover .header__menu_dropdown-content {
+    display: block;
+  }
 }
