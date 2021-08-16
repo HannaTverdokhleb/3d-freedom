@@ -40,11 +40,22 @@ body {
     margin: 0 auto;
   }
 }
-/*h2 {
+.common-title {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 24px;
+  text-transform: uppercase;
   line-height: 1.25;
   color: var(--secondary-text-color);
-}*/
+}
+@media screen and (min-width: 768px) {
+  .common-title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .common-title {
+    font-size: 48px;
+  }
+}

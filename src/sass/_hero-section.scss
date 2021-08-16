@@ -1,5 +1,51 @@
+.home-hero {
+  padding: 93px 0 25px 0;
+}
 .home-hero-title {
   font-family: var(--primary-font);
-  padding: 50px;
-  background-color: red;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  max-width: 260px;
+  margin: 0 auto 30px auto;
+}
+.home-hero-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.home-hero-item {
+  overflow: hidden;
+  display: block;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+  &.figure {
+    border-top-right-radius: 45%;
+  }
+  &.petal {
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+  }
+  &.round {
+    border-radius: 50%;
+  }
+}
+.home-hero-subtitle {
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .home-hero-title {
+    font-size: 24px;
+    max-width: 350px;
+    margin-bottom: 65px;
+  }
+  .home-hero-subtitle {
+    font-size: 18px;
+  }
+  .home-hero-images {
+    margin-bottom: 65px;
+  }
 }
