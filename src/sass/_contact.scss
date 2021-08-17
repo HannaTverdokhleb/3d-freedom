@@ -243,12 +243,15 @@
 
 @media screen and (min-width: 1440px) {
   .hero-video {
+    display: flex;
     margin-right: 32px;
     width: 515px;
     max-width: 700px;
   }
 
   .contact-hero__description {
+    display: flex;
+    flex-direction: column;
     width: 515px;
   }
 }
@@ -335,6 +338,7 @@
     }
 
     &::placeholder {
+      font-family: var(--secondary-font);
       font-size: 16px;
       line-height: 1.25;
       color: #cdcdcd;
@@ -412,6 +416,9 @@
   &:focus {
     @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
     background-color: #cdcdcd;
+    color: #ffffff;
+    text-shadow: -1px 0 var(--secondary-text-color), 0 1px var(--secondary-text-color),
+      1px 0 var(--secondary-text-color), 0 -1px var(--secondary-text-color);
   }
 }
 
@@ -502,6 +509,11 @@
     padding: 0 20px;
   }
 
+  .contact-heading {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
   .contact-form-section .container,
   .contact-contacts-section .container {
     width: 515px;
@@ -510,6 +522,10 @@
   .container-hybrid {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .contact-form-field__label {
+    font-size: 18px;
   }
 
   .contact-list {
@@ -521,6 +537,11 @@
     font-weight: 400;
     line-height: 1.11;
   }
+
+  .contact-list__item--inner-geometry {
+    margin-bottom: 18px;
+  }
+
   .contact-list-point-1,
   .contact-list-point-2 {
     margin-bottom: 68px;
