@@ -455,3 +455,91 @@
     text-align: right;
   }
 }
+
+.contact-list {
+  padding: 0;
+}
+
+.contact-list__item {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #2b2b2b;
+}
+
+.contact-heading-geometry {
+  margin-bottom: 8px;
+}
+
+.contact-heading__normal-case {
+  text-transform: none;
+}
+
+.contact-list-point-1,
+.contact-list-point-2 {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list-point-1,
+  .contact-list-point-2 {
+    margin-bottom: 0;
+  }
+}
+
+.contact-list__item--inner-geometry {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hybrid-section-desktop {
+    width: 1100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .contact-form-section .container,
+  .contact-contacts-section .container {
+    width: 515px;
+  }
+
+  .container-hybrid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact-list {
+    flex-direction: column;
+  }
+
+  .contact-list__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.11;
+  }
+  .contact-list-point-1,
+  .contact-list-point-2 {
+    margin-bottom: 68px;
+  }
+
+  .contact-list-point-3 {
+    text-align: left;
+  }
+
+  .contact-our-contacts,
+  .contact-form-field {
+    width: 515px;
+  }
+
+  .contact-page-form {
+    width: 515px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+}
