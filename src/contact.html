@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-  <title>Contact</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-    crossorigin="anonymous" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
 
   <body>
+    <div class="phone-fig-12"></div>
+    <div class="phone-fig-67"></div>
+    <div class="phone-fig-68"></div>
+    <div class="phone-fig-63"></div>
+    <div class="tablet-fig-5"></div>
+    <div class="tablet-fig-68"></div>
+    <div class="tablet-fig-58"></div>
+    <div class="desktop-fig-68"></div>
+    <div class="desktop-fig-46"></div>
+    <div class="desktop-fig-60"></div>
+    <div class="desktop-fig-61"></div>
+    <div class="desktop-fig-3"></div>
     <main>
       <section class="contact-hero-section">
         <div class="container">
@@ -44,6 +60,143 @@
           </div>
         </div>
       </section>
+
+      <div class="hybrid-section-desktop">
+        
+
+      <section class="contact-form-section">
+        <div class="container container-hybrid">
+          <div class="contact-us">
+            <form class="contact-page-form" action="#">
+              <h2 class="contact-heading contact-heading-center">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+              <div class="contact-form-field">
+                <input
+                  class="contact-form-field__input"
+                  type="text"
+                  name="user-name"
+                  id="name"
+                  placeholder=" "
+                  minlength="2"
+                  pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                  title="Ім'я повинно містити символи латиниці або кирилиці"
+                  required
+                />
+                <label for="name" class="contact-form-field__label">Ім'я</label>
+              </div>
+
+              <div class="contact-form-field">
+                <input
+                  class="contact-form-field__input"
+                  type="email"
+                  name="user-email"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="contact-form-field__label"
+                  >Email</label
+                >
+              </div>
+
+              <div class="contact-form-field">
+                <textarea
+                  class="contact-form-field__textarea"
+                  name="user-comment"
+                  id="contact-textarea"
+                  placeholder="Залишіть своє повідомлення"
+                ></textarea>
+                <label
+                  for="contact-textarea"
+                  class="contact-form-field__label textarea-label"
+                  >Повідомлення</label
+                >
+              </div>
+              <div class="contact-form-field">
+                <label
+                  for="file"
+                  class="
+                    contact-form-field__label contact-form-field__label--grey
+                  "
+                  >*Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+                  <input
+                    class="contact-form-field__file visually-hidden"
+                    type="file"
+                    name="file"
+                    id="file"
+                  />
+                  <svg class="contact-form-icon" width="22" height="20">
+                    <use href="./images/sprite.svg#icon-paper-clip"></use>
+                  </svg>
+                </label>
+              </div>
+
+              <button type="submit" class="button contact-form-button">
+                ВІДПРАВИТИ
+              </button>
+            </form>
+            </div>
+          </section>
+          <section class="contact-contacts-section">
+            <div class="container container-hybrid">
+            <div class="contact-our-contacts">
+              <ul class="contact-list">
+                <div class="contact-list-point-1">
+                <h2 class="contact-heading contact-heading-geometry">
+                  ТЕЛЕФОНИ
+                </h2>
+                <li
+                  class="contact-list__item contact-list__item--inner-geometry"
+                >
+                  +38(095)-73-84-551
+                </li>
+                <li
+                  class="contact-list__item"
+                >
+                  +38(098)-00-25-235
+                </li>
+                </div>
+                <div class="contact-list-point-2">
+                <h2
+                  class="
+                    contact-heading contact-heading-geometry
+                    contact-heading__normal-case
+                  "
+                >
+                  Email
+                </h2>
+                <li
+                  class="contact-list__item"
+                >
+                  3dfreedom.info@gmail.com
+                </li>
+                </div>
+                <div class="contact-list-point-3">
+                <h2 class="contact-heading contact-heading-geometry">
+                  Робочий час
+                </h2>
+                <li
+                  class="contact-list__item contact-list__item--inner-geometry"
+                >
+
+                  Пн-пт: <br class="desktop-break"/>з 8:00 до 19:00
+                </li>
+                <li
+                  class="contact-list__item"
+                >
+                  Сб, Нд: <br class="desktop-break"/>
+                  з 10:00 до 17:00
+                </li>
+                </div>
+              </ul>
+            </div>
+          
+        </div>
+      </section>
+      </div>
+      </div>
+
+
+
     </main>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./contact.js"></script>
