@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Take order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -13,21 +22,19 @@
         <div class="take-order__wrapper">
             <h1 class="take-order__heading">ЗРОБИТИ ЗАМОВЛЕННЯ</h1>
             <div class="take-order__text-wrapper">
-                <p class="take-order__text">На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з
+                <p class="take-order__text">На цій сторінці ви можете зробити замовлення заповнивши форму і ми
+                    зв'яжемося з
                     вами.</p>
                 <p class="take-order__text">Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть
                     відповідь на всі ваші запитання.</p>
-    
             </div>
             <ul class="take-order__img-wrapper">
                 <li class="take-order__img ">
-    
                     <picture>
                         <source media="(min-width: 1440px)"
                             srcset="./images/take-order/take-order-desktop-2-1x.jpg 1x, ./images/take-order/take-order-desktop-2-2x.jpg 2x">
                         <img class="take-order__img modif-img-1" src="#" alt="car">
                     </picture>
-    
                 </li>
                 <li class="take-order__img">
                     <picture>
@@ -45,7 +52,6 @@
                 </li>
             </ul>
         </div>
-    
         <div class="take-order__info-form-wrapper">
             <form class="take-order__modal">
                 <p class="take-order__modal-head">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
@@ -68,21 +74,15 @@
                             name="types-of-plastic" id="types-of-plastic" placeholder="Види пластика" required>
                         <span class="custom-select"></span>
                         <datalist id="plastic">
-    
                             <!-- <select> -->
                             <option value="300 мікрон">
                             <option value="200 мікрон">
                             <option value="100 мікрон">
                             <option value="Труднощі у виборі - ми допоможемо">
                                 <!-- </select> -->
-    
                         </datalist>
                     </span>
-    
                 </label>
-    
-    
-    
                 <label for="print-quality" class="take-order__modal-form-field">
                     <span class="take-order__modal-input-wrapper pseudo">
                         <input type="text" class="take-order__modal-input" name="print-quality" id="print-quality"
@@ -99,16 +99,19 @@
                     Повідомлення
                     <textarea name="user-message" class="take-order__modal-form-message"
                         placeholder="Залишіть своє повідомлення" id="message"></textarea>
+                        <div class="take-order__svg-wrapper">
+                        <svg class="take-order__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-clip"></use>
+                        </svg>
+                        </div>
                 </label>
+
                 <p class="take-order__modal-form-message-comment">*Прикріпіть зображення / креслення / STL / Obj /
                     CAD-модель</p>
                 <div class="take-order__button-wrapper">
                     <button type="submit" class="take-order__modal-form-button">ВІДПРАВИТИ</button>
                 </div>
             </form>
-    
-    
-    
             <div class="take-order__info-wrapper">
                 <ul class="take-order__info-list">
                     <li class="take-order__info-item">
@@ -134,20 +137,17 @@
                         <h2 class="take-order__info-head text-transform">Робочий час</h2>
                         <ul class="take-order__tel-list">
                             <li class="take-order__tel-item">
-                                Пн-Пт:
+                                <span class="take-order-info-txt-wrp">Пн-Пт:</span>
                                 з 8:00 до 19:00
                             </li>
                             <li class="take-order__tel-item">
-                                Сб, Нд:
+                                <span class="take-order-info-txt-wrp">Сб, Нд:</span>
                                 з 10:00 до 17:00
                             </li>
                         </ul>
                     </li>
                 </ul>
-    
-    
             </div>
-    
         </div>
         <div class="take-order__contacts-img">
             <picture>
@@ -155,13 +155,10 @@
                     srcset="./images/take-order/take-order-desktop-5-1x.jpg 1x, ./images/take-order/take-order-desktop-5-2x.jpg 2x">
                 <img class="take-order__img-contacts" src="#" alt="gallery">
             </picture>
-    
         </div>
     </section>
-    
- 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <script src="./take-order.js"></script>
 </body>
 
 </html>
