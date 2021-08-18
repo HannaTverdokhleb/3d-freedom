@@ -1,15 +1,11 @@
 body{
   background-image: url("../images/decor_mobile.png");
 }
-
 .header {
   // position: fixed;
   width: 100%;
   z-index: 1000;
   // background: rgba(#fff, 0.9);
-
-  width: 100%;
-  background: rgba(#fff, 0.9);
 }
 .header-container {
   display: flex;
