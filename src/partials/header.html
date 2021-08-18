@@ -27,7 +27,7 @@
                     <div class="header__menu-dropdown">
                         <a href="" class="header__menu-list-link header__menu_dropdown-btn">Послуги</a>
                         <div class="header__menu_dropdown-content">
-                            <ul class="list">
+                            <ul class="list dropdown-list">
                                 <li>
                                     <a href="" class="menu-dropdown__link">3D Моделювання</a>
                                 </li>
@@ -57,11 +57,50 @@
             </svg>
         </button>
 
-        <button class="adaptive-menu modal__close-btn" data-menu-close>
+
+        <div class="container adaptive-menu" data-menu>
+            <button class="modal__close-btn" data-menu-close>
+                <svg class="modal-cross-close-icon" width="45" height="45">
+                    <use href="./images/icons.svg#icon-cross-close-btn"></use>
+                </svg>
+            </button>
+            <ul class="adaptive-menu__list">
+                <li class="adaptive__main">
+                    <a class="adaptive__link" href=""><span class="adaptive-item">ГОЛОВНА</span></a>
+                </li>
+                <li class="adaptive__main">
+                    <a class="adaptive__link" href=""><span class="adaptive-item">ПОСЛУГИ</span></a>
+                </li>
+                <li class="adaptive-menu__main">
+                    <a class="adaptive-menu__link" href=""><span class="adaptive-item">3D
+                            Моделювання</span></a>
+                </li>
+                <li class="adaptive-menu__main">
+                    <a class="adaptive-menu__link" href=""><span class="adaptive-item">3D
+                            Сканування</span></a>
+                </li>
+                <li class="adaptive-menu__main">
+                    <a class="adaptive-menu__link" href=""><span class="adaptive-item">3D
+                            Друк</span></a>
+                </li>
+                <li class="adaptive__main">
+                    <a class="adaptive__link" href=""><span class="adaptive-item">ЗАМОВИТИ</span></a>
+                </li>
+                <li class="adaptive__main">
+                    <a class="adaptive__link" href=""><span class="adaptive-item">КОНТАКТИ</span></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- <button class="modal__close-btn" data-menu-close>
             <svg class="modal-cross-close-icon" width="45" height="45">
                 <use href="./images/icons.svg#icon-cross-close-btn"></use>
             </svg>
-        </button>
+        </button> -->
+
+
+
 
         <a href="" class="header__phone-icon_link">
             <svg class="header__phone-icon" width="24" height="24">
