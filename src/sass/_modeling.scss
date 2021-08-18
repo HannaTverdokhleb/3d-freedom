@@ -117,7 +117,7 @@
     padding-bottom: 196px;
     background-size: 280px 146px;
     background-repeat: no-repeat;
-    background-position: center 298px;
+    background-position: center bottom;
     background-image: url('../images/3d-modeling/mobile/model-mobile.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -125,7 +125,7 @@
       screen and (min-resolution: 2dppx) {
       background-size: 280px 164px;
       background-repeat: no-repeat;
-      background-position: center 298px;
+      background-position: center bottom;
       background-image: url('../images/3d-modeling/mobile/model-mobile@2x.jpg');
     }
   }
