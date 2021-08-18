@@ -19,8 +19,7 @@
     />
   </head>
   <body>
-    <!--місце для хедера-->
-
+    <include src="./partials/header.html"></include>
     <main>
       <section class="container hero-scanning">
         <div class="hero-scanning-container">
@@ -97,12 +96,11 @@
       <section class="container scanning-button">
         <h3 class="visually-hidden scan-latent-title">ЗРОБІТЬ ЗАМОВЛЕННЯ</h3>
         <div class="scanning-button-container">
-          <a class="scanning-push" href="#">ЗРОБИТИ ЗАМОВЛЕННЯ</a>
+          <a class="scanning-push" href="./take-order.html">ЗРОБИТИ ЗАМОВЛЕННЯ</a>
         </div>
       </section>
     </main>
-
-    <!--місце для футера-->
+    <include src="./partials/footer.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./scanning.js"></script>
   </body>
