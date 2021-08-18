@@ -522,7 +522,7 @@ transition: color var(--animation);
 }
 
 .home-hero {
-  padding: 93px 0 25px 0;
+  padding: 30px 0 25px 0;
 }
 
 .home-hero-title {
@@ -583,6 +583,27 @@ transition: color var(--animation);
   }
   .home-hero-images {
     margin-bottom: 65px;
+  }
+  .home-hero .home-hero-images {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home-hero {
+    padding-top: 70px;
+  }
+  .home-hero-images {
+    max-width: 690px;
+  }
+  .home-hero-title {
+    max-width: 600px;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  .home-hero-subtitle {
+    font-size: 36px;
   }
 }
 
