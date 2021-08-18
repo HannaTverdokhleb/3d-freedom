@@ -1,3 +1,31 @@
+// ADAPTIVE MENU
+.adaptive-menu {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden; 
+    pointer-events: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    // background-color:;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+
+.adaptive-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 .adaptive-menu {
 overflow: hidden;
 display: block;
@@ -5,12 +33,10 @@ width: 100vh;
 height: 100vh;
 background-color: #ffffff;
 margin: 0 auto;
+padding-top: 33px;
 background-image: url(../images/main_menu/decor_mobile.png);
 }
-.adaptive-menu__heder{
-width: 100vh;
-height: 115px;
-}
+
 @media screen and (min-width: 320px) {
 .adaptive-menu {
 width: 320px;
@@ -43,9 +69,8 @@ height: 115px;
 }
 @media screen and (min-width: 1440px) {
 .adaptive-menu {
-/* display: none; */
+display: none;
 }
-
 }
 
 

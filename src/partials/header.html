@@ -51,7 +51,7 @@
         </nav>
 
 
-        <button class="header__burger-btn">
+        <button class="header__burger-btn" data-menu-open>
             <svg class="header__burger-icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -104,6 +104,21 @@
         </ul>
     </div>
 
-
-
 </header>
+
+<script>
+    (() => {
+        const refs = {
+            openMenuBtn: document.querySelector("[data-menu-open]"),
+            closeMenuBtn: document.querySelector("[data-menu-close]"),
+            menu: document.querySelector("[data-menu]"),
+        };
+
+        refs.openMenuBtn.addEventListener("click", toggleModal);
+        refs.closeMenuBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+            refs.menu.classList.toggle("is-open");
+        }
+    })();
+</script>
