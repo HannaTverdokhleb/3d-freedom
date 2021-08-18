@@ -48,6 +48,9 @@
   @media screen and (min-width: 768px) {
     text-align: start;
   }
+  @media screen and (min-width: 1440px) {
+    margin-right: 87px;
+  }
 }
 
 .footer-social__list {
@@ -58,10 +61,10 @@
   @media screen and (min-width: 768px) {
     text-align: start;
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1440px) {
-    margin-left: 87px;
     margin-right: 145px;
   }
 }
@@ -69,7 +72,6 @@
 .footer-contact__item,
 .footer-contact__text {
   text-align: center;
-  margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
     text-align: end;
@@ -85,7 +87,8 @@
 }
 
 .footer-social__item:not(:last-child),
-.footer-nav__item:not(:last-child) {
+.footer-nav__item:not(:last-child),
+.footer-contact__item:not(:last-child) {
   margin-bottom: 8px;
 }
 
