@@ -25,14 +25,16 @@
   color: rgba(72, 121, 150, 1);
   cursor: pointer;
   background-color: rgba(245, 245, 250, 1);
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #c5c3c3;
-    box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-      5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+    background-color: #cdcdcd;
+    color: #ffffff;
+    text-shadow: -1px 0 var(--secondary-text-color), 0 1px var(--secondary-text-color),
+      1px 0 var(--secondary-text-color), 0 -1px var(--secondary-text-color);
   }
 
   .scan-latent-title {
