@@ -1,8 +1,4 @@
-body{
-  background-image: url("../images/decor_mobile.png");
-  background-size: contain;
-    background-repeat: no-repeat;
-}
+
 .header {
   // position: fixed;
   width: 100%;
@@ -108,12 +104,6 @@ body{
 
 @media screen and (min-width: 768px) {
 
-body{
-  background-image: url("../images/decor_tablet.png");
-  background-size: contain;
-    background-repeat: no-repeat;
-  
-}
 
   .header-container {
     width: 768px;
@@ -159,11 +149,8 @@ body{
 }
 
 @media screen and (min-width: 1440px) {
-  body{
-    background-image: url("../images/decor.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+ 
+  
   .header-container {
     width: 1320px;
   }
