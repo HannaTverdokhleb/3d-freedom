@@ -69,44 +69,28 @@
                 
                 <label for="types-of-plastic" class="take-order__modal-form-field">
                 <span class="take-order__modal-input-wrapper pseudo">
-                        <!-- <input type="text" list="plastic" class="take-order__modal-input take-order__modal-modif"
+                    <input type="text" list="plastic" class="take-order__modal-input take-order__modal-modif"
                             name="types-of-plastic" id="types-of-plastic" placeholder="Види пластика" required> 
-                         -->
-                         <span class="take-order-select-wrp">
-                        <select class="select-css-take-order">
-                            <option class="take-order-selection-placeholder">Види пластика</option>
-                            <option>300 мікрон</option>
-                            <option>200 мікрон</option>
-                            <option>100 мікрон</option>
-                            <option>Труднощі у виборі - ми допоможемо</option>
-                        </select>
-                        </span>
+                        <datalist id="plastic">
+                            <option value="300 мікрон">
+                            <option value="200 мікрон">
+                            <option value="100 мікрон">
+                            <option value="Труднощі у виборі - ми допоможемо">
+                        </datalist>
                     </span>
                 </label>
                 
                 <label for="print-quality" class="take-order__modal-form-field">
                     <span class="take-order__modal-input-wrapper pseudo">
-                        <!-- <input type="text" class="take-order__modal-input" name="print-quality" id="print-quality"
-                            placeholder="Якість друку" required> -->
-                            <select class="select-css-take-order">
-                                <option>Якість друку</option>
-                                <option>300 мікрон</option>
-                                <option>200 мікрон</option>
-                                <option>100 мікрон</option>
-                                <option>Труднощі у виборі - ми допоможемо</option>
-                            </select>
+                        <input type="text" class="take-order__modal-input" name="print-quality" id="print-quality"
+                            placeholder="Якість друку" required> 
+                        
                     </span>
                 </label>
                 <label for="color" class="take-order__modal-form-field">
                     <span class="take-order__modal-input-wrapper pseudo">
-                        <!-- <input type="text" class="take-order__modal-input" name="color" id="color" placeholder="Колір"> -->
-                        <select class="select-css-take-order">
-                            <option>Колір</option>
-                            <option>300 мікрон</option>
-                            <option>200 мікрон</option>
-                            <option>100 мікрон</option>
-                            <option>Труднощі у виборі - ми допоможемо</option>
-                        </select>
+                        <input type="text" class="take-order__modal-input" name="color" id="color" placeholder="Колір">
+                        
                         
                             
                     </span>
@@ -177,15 +161,6 @@
           <img class="take-order__img-contacts" src="#" alt="gallery" />
         </picture>
       </div>
-<!-- <select class="select-css-take-order">
-    <option>Цвет</option>
-    <option>Синий</option>
-    <option>Желтый</option>
-    <option>Красный</option>
-    <option>Трудности в выборе-мы вам поможем</option>
-</select> -->
-
-
     </section>
     
     <include src="./partials/footer.html"></include>
