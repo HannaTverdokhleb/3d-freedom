@@ -109,7 +109,7 @@
   &:focus {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #2b2b2b;
+    -webkit-text-stroke-color: var(--secondary-text-color);
   }
 }
 
@@ -119,6 +119,6 @@
   color: #487996;
   &:hover,
   &:focus {
-    -webkit-text-stroke-color: #487996;
+    -webkit-text-stroke-color: var(--secondary-text-color);
   }
 }
